@@ -29,6 +29,16 @@
             padding-right: 20px;
         }
     }
+    .consultation {
+        min-height: 620px;
+        padding: 50px 20px;
+        &__desc {
+            margin-top: 20px;
+        }
+        .title_left {
+            font-size: 30px;
+        }
+    }
 }
 @media (max-width: 767px) {
     .promo {
@@ -59,6 +69,16 @@
         }
         &__subtitle {
             margin-top: 15px;
+        }
+    }
+    .consultation {
+        text-align: center;
+        &__desc {
+            font-size: 18px;
+        }
+        .feed-form {
+            margin: 0 auto;
+            margin-top: 20px;
         }
     }
 }
@@ -109,6 +129,26 @@
         &__wrapper {
             flex-direction: column;
             align-items: center;
+        }
+    }
+}
+@media (max-width: 319px) {
+    .consultation {
+        .title_left {
+            font-size: 19px;
+        }
+        &__desc {
+            font-size: 14px;
+        }
+        .feed-form {
+            width: 230px;
+            input {
+                height: 40px;
+            }
+            .button_submit {
+                height: 40px;
+                font-size: 14px;
+            }
         }
     }
 }
