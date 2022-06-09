@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+   <link rel="stylesheet" href="css/style.min.css">
     <title>Pulse</title>
 </head>
 <body>
 
-    <div class="promo">
+    <section class="promo">
         <div class="container">
             <header class="header">
                 <a href="#" class="header__logo">
@@ -55,9 +56,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="benefits">
+    <section class="benefits">
         <div class="container">
             <h2 class="title">
                 наши преимущества
@@ -87,9 +88,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="consultation">
+    <section class="consultation">
         <div class="container">
             <h2 class="title title_left">
                 Получите бесплатную консультацию<br>
@@ -105,6 +106,61 @@
                 <button class="button button_submit">Заказать консультацию</button>
             </form>
         </div>
-    </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="img/slider/slider_1.png" alt="slide">
+                </div>
+                <div>
+                    <img src="img/slider/slider_2.png" alt="slide">
+                </div>
+                <div>
+                    <img src="img/slider/slider_3.png" alt="slide">
+                </div>
+            </div>
+            <button type="button" class="prev"><img src="icons/left_arrow.png" alt=""></button>
+            <button type="button" class="next"><img src="icons/right_arrow.png" alt=""></button>
+        </div>
+    </section>
+
+    <section class="catalog">
+        <div class="container">
+            <h2 class="title">Каталог пульсометров</h2>
+            <ul class="catalog__tabs">
+                <li class="catalog__tab"><div>Для фитнеса</div></li>
+                <li class="catalog__tab"><div>для бега</div></li>
+                <li class="catalog__tab"><div>для триатлона</div></li>
+            </ul>
+
+            <div class="catalog__content">
+                <div class="catalog-item">
+                    <img src="img/catalog_polar.png" alt="pulsometr" class="catalog-item__img">
+                    <div class="catalog-item__subtitle">Пульсометр Polar FT1</div>
+                    <div class="catalog-item__desc">
+                        Для первых шагов в тренировках,
+                        основанных на сердечном ритме
+                    </div>
+                    <a href="#" class="catalog-item__link">ПОДРОБНЕЕ</a>
+                    <hr>
+
+                    <div class="catalog-item__footer">
+                        <div class="catalog-item__prices">
+                            <div class="catalog-item__old-price">4 750 руб.</div>
+                            <div class="catalog-item__price">4 500 руб.</div>
+                        </div>
+                        <button class="button button_mini">КУПИТЬ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="catalog__content"></div>
+            <div class="catalog__content"></div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
