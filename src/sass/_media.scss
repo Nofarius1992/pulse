@@ -1,5 +1,25 @@
 //@media (max-width: 1400px)
 //@media (max-width: 1200px)
+@media (max-width: 1100px) {
+    .carousel {
+        width: 600px;
+        margin: 0 auto;
+        padding-bottom: 30px;
+        .prev {
+            left: -50px;
+        }
+        .next {
+            right: -50px;
+        }
+        &__inner {
+            img {
+                width: 600px;
+            }
+        }
+    }
+
+}
+
 @media (max-width: 991px) {
     .promo {
         min-height: 610px;
@@ -37,6 +57,11 @@
         }
         .title_left {
             font-size: 30px;
+        }
+    }
+    .catalog {
+        .title {
+            text-align: center;
         }
     }
 }
@@ -79,6 +104,28 @@
         .feed-form {
             margin: 0 auto;
             margin-top: 20px;
+        }
+    }
+
+    .carousel {
+        width: 300px;
+        &__inner {
+            img {
+                width: 300px;
+            }
+        }
+    }
+
+    .catalog {
+        &__tabs {
+            margin-top: 40px;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__tab {
+            width: 200px;
+            margin-bottom: 10px;
+            font-size: 15px;
         }
     }
 }
