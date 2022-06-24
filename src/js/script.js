@@ -49,4 +49,29 @@ $(document).ready(function () {
             $('.overlay, #order').fadeIn('slow');
         });
     });
+
+    function validate(form) {
+        $(form).validate({
+            rules: {
+                name: "required",
+                phone: "required",
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "Пожалуйста, введите своё имя!",
+                phone: "Пожалуйста, введите свой номер телефона",
+                email: {
+                    required: "Пожалуйста, введите свою почту!",
+                    email: "Непарвильно введён адрес почты"
+                }
+            }
+        });
+    }
+
+    validate("#consultation-form-mt25");
+    validate("#consultation-form");
+    validate("#order-form");
 })
