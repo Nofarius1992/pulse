@@ -200,6 +200,32 @@
             text-align: center;
         }
     }
+
+    .modal {
+        width: 250px;
+        min-height: 330px;
+        &__close {
+            right: -25px;
+            font-size: 30px;
+            line-height: 15px;
+        }
+        &__subtitle {
+            font-size: 10px;
+        }
+        &__desc {
+            font-size: 9px;
+        }
+        .feed-form_mt25 {
+            width: 180px;
+            input {
+                height: 35px;
+            }
+            button {
+                height: 35px;
+                font-size: 11px;
+            }
+        }
+    }
 }
 @media (max-width: 319px) {
     .consultation {
