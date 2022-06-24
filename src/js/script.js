@@ -74,4 +74,6 @@ $(document).ready(function () {
     validate("#consultation-form-mt25");
     validate("#consultation-form");
     validate("#order-form");
+
+    $('input[name=phone]').mask("+38 (999) 999-9999");
 })
