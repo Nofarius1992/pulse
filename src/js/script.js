@@ -37,7 +37,8 @@ $(document).ready(function () {
 //    Modal
 
     $('[data-modal=consultation]').on('click', function () {
-        $('.overlay, #consultation').fadeIn('slow');
+        // $('.overlay, #consultation').fadeIn('slow');
+        alert('Ok');
     });
     $('.modal__close').on('click', function () {
         $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
@@ -76,4 +77,22 @@ $(document).ready(function () {
     validate("#order-form");
 
     $('input[name=phone]').mask("+38 (999) 999-9999");
+
+    // Smooth scroll and pageup
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+
+    $("a[href=#up]").click(function () {
+        const _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
+
+    new WOW().init();
+
 })

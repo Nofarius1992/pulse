@@ -18,6 +18,12 @@
         margin: 0 auto;
         width: 70px;
         height: 70px;
+        &_animated {
+            animation: heartbeat 1.5s infinite ease;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
     }
     &__subtitle {
         margin-top: 38px;
